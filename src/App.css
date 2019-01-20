@@ -22,10 +22,10 @@
   /* border: 1px solid black; */
 }
 
-/* .height {
-  float: left;
+.height {
+  font-style: bold;
 }
 
 .weight {
-  float: right;
-} */
+  font-style: bold;
+}

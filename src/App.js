@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-bootstrap";
 import "./App.css";
 import Abilities from "./components/abilities";
 import Moves from "./components/moves";
@@ -24,7 +25,7 @@ class App extends Component {
   }
   render() {
     if (this.state.data === null) {
-      return <h1>Thinking about what you are asking for!!</h1>;
+      return <h1>Let me grab that for you...</h1>;
     }
     console.log(this.state);
 
@@ -38,10 +39,10 @@ class App extends Component {
         <div className="attributes">
           <div className="height">
             <h2>Height for {this.state.data.name}</h2>
-            <div>{this.state.data.height}</div>
+            <div>{this.state.data.height}ft</div>
             <div className="weight">
               <h2>Weight for {this.state.data.name}</h2>
-              {this.state.data.weight}
+              {this.state.data.weight} lbs
             </div>
           </div>
         </div>

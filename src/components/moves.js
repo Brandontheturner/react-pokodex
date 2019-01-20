@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "react-bootstrap";
 
 class Moves extends Component {
   render() {
