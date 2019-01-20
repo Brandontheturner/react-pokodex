@@ -12,3 +12,11 @@
   flex-direction: flex-start;
   width: 90%;
 }
+
+.attributes {
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+}
