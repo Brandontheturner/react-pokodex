@@ -5,18 +5,27 @@
   align-items: center;
   justify-content: center;
   background-color: blanchedalmond;
+  border: 1px solid blue;
 }
 
 .spriteContainer {
   display: flex;
-  flex-direction: flex-start;
   width: 90%;
 }
 
 .attributes {
-  text-align: center;
-  display: flex;
+  display: column;
+  flex-direction: flex-start;
+  justify-items: center;
   align-items: flex-start;
-  justify-content: center;
-  width: 90%;
+  width: 40%;
+  /* border: 1px solid black; */
 }
+
+/* .height {
+  float: left;
+}
+
+.weight {
+  float: right;
+} */
