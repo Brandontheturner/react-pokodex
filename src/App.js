@@ -35,18 +35,21 @@ class App extends Component {
           <img className="sprites1" src={this.state.data.sprites.front_shiny} />
           <img className="sprites2" src={this.state.data.sprites.back_shiny} />
         </div>
-        <h2>Abilities for {this.state.data.name}</h2>
-        <Abilities data={this.state.data} />
-        <div className="height">
-          <h2>Height for {this.state.data.name}</h2>
-
-          <div>{this.state.data.height}</div>
-          <div className="weight">
-            <h2>Weight for {this.state.data.name}</h2>
-            {this.state.data.weight}
+        <div className="attributes">
+          <div className="height">
+            <h2>Height for {this.state.data.name}</h2>
+            <div>{this.state.data.height}</div>
+            <div className="weight">
+              <h2>Weight for {this.state.data.name}</h2>
+              {this.state.data.weight}
+            </div>
           </div>
         </div>
-        <Moves data={this.state.data} />
+        <div className="skills">
+          <h2>Abilities for {this.state.data.name}</h2>
+          <Abilities data={this.state.data} />
+          <Moves data={this.state.data} />
+        </div>
       </div>
     );
   }
